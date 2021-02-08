@@ -1,0 +1,36 @@
+# WordPress Coding Standards editor configuration normalization
+# http://make.wordpress.org/core/handbook/coding-standards/
+
+# This file is for unifying the coding style for different editors and IDEs
+# editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Global
+# UTF-8, Unix-style newlines, newline ending every file, trim trailing whitespace
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# PHP https://developer.wordpress.org/coding-standards/wordpress-coding-standards/php/
+[*.php]
+indent_style = tab
+indent_size = 4
+
+# HTML https://developer.wordpress.org/coding-standards/wordpress-coding-standards/html/
+[*.html]
+indent_style = tab
+indent_size = 4
+
+# CSS https://developer.wordpress.org/coding-standards/wordpress-coding-standards/css/
+[{*.css,*.scss}]
+indent_style = tab
+indent_size = 4
+
+# JavaScript https://developer.wordpress.org/coding-standards/wordpress-coding-standards/javascript/
+[{*.js,*.json}]
+indent_style = tab
+indent_size = 4

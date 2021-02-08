@@ -1,0 +1,29 @@
+{
+  "name": "acf-table-field",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "codemirror": "^5.59.2",
+    "jsonlint-mod": "^1.7.6"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "jquery-edittable": "^0.2.2",
+    "laravel-mix": "^5.0.4",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "ie 8",
+    "ie 7"
+  ],
+  "scripts": {
+    "local": "cross-env NODE_ENV=local node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "staging": "cross-env NODE_ENV=staging node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run local -- --watch"
+  }
+}
